@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/index.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="container">
+      <!-- Add Task -->
+      <div class="frame-crud">
+        <h2 class="frame__title">Task List</h2>
+        <div class="frame__input">
+          <div class="input-name">
+            <label>New Task: </label>
+            <input type="text" id="newTask" placeholder="Name Task..." />
+          </div>
+
+          <div class="input-time">
+            <label>Time: </label>
+            <input type="text" id="time" placeholder="Time..." />
+          </div>
+
+          <div class="input-status">
+            <input type="hidden" id="idTask" value="" />
+            <label>Status: </label>
+            <div class="status-done">
+              <label>Done</label>
+              <input type="radio" value="true" name="status" />
+            </div>
+            <div class="status-not-yet">
+              <label>Not yet</label>
+              <input type="radio" value="false" name="status" />
+            </div>
+          </div>
+        </div>
+        <div class="frame__button">
+          <button type="button" class="button-add" id="submit-add">
+            Add Task
+          </button>
+          <button
+            type="button"
+            class="button-add hide-button"
+            id="submit-update"
+          >
+            Update
+          </button>
+          <button
+            type="button"
+            class="button-add hide-button"
+            id="button-cancel"
+          >
+            Update
+          </button>
+        </div>
+        <!-- View Task -->
+        <div class="view-crud">
+          <!-- Row title -->
+          <h2 class="frame__title">View</h2>
+          <!-- Row detail -->
+          <div class="view__row">
+            <div class="view__row-name center-row">
+              <p>Làm task crud</p>
+            </div>
+            <div class="view__row-time border-left-col center-row">
+              <p>1 week</p>
+            </div>
+            <div class="view__row-status border-left-col center-row">
+              <p>Done</p>
+            </div>
+            <div class="view__row-action border-left-col center-row">
+              <div class="button-action">
+                <button type="button" class="action-update">Update</button>
+                <button type="button" class="action-delete">Delete</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.js"
+      integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE="
+      crossorigin="anonymous"
+    ></script>
+    <script type="text/javascript" src="js/index.js"></script>
+  </body>
+</html>

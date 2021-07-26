@@ -1,0 +1,159 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  height: 100%;
+  width: 100%;
+  padding-top: 20px;
+  display: flex;
+  justify-content: center;
+}
+.frame-crud {
+  width: 55%;
+  min-height: 430px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  outline: 2px solid gray;
+  box-shadow: 7px 9px grey;
+}
+.frame__input {
+  width: 85%;
+  height: 35%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+h2.frame__title {
+  font-weight: 400;
+  text-align: center;
+  padding: 10px 0px;
+}
+
+.input-name input {
+  flex: 5;
+}
+
+.input-name label {
+  flex: 1;
+}
+.input-name {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.input-time input {
+  flex: 5;
+}
+
+.input-time label {
+  flex: 1;
+}
+.input-time {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.input-status {
+  display: flex;
+  width: 100%;
+}
+
+.status-done {
+  flex: 1;
+}
+.status-not-yet {
+  flex: 4;
+}
+.input-status label {
+  flex: 1;
+}
+.frame__button {
+  width: 100%;
+  text-align: center;
+  height: 40px;
+}
+button.button-add {
+  border: 1px solid black;
+  background: transparent;
+  width: 15%;
+  height: 100%;
+  border-bottom: 5px solid black;
+}
+
+@keyframes change-color-button {
+  0% {
+    background: transparent;
+    transform: skew(0deg);
+  }
+  100% {
+    background: gray;
+    transform: skew(5deg);
+  }
+}
+button.button-add:hover {
+  animation: change-color-button 3s;
+  background: gray;
+  border: none;
+  transform: skew(5deg);
+}
+
+input#time {
+  height: 25px;
+}
+input#newTask {
+  height: 25px;
+}
+
+.view-crud {
+  margin-top: 38px;
+  width: 85%;
+  padding-bottom: 20px;
+}
+
+.view__row {
+  height: 30px;
+  border: 2px solid gray;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.view__row-name {
+  width: 30%;
+  height: 100%;
+}
+
+.view__row-time {
+  width: 20%;
+  height: 100%;
+}
+
+.view__row-status {
+  width: 20%;
+}
+
+.view__row-action {
+  width: 30%;
+}
+
+.center-row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.border-left-col {
+  border-left: 2px solid gray;
+}
+
+.hide-button {
+  display: none;
+}
